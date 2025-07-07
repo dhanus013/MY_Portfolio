@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+
+
+    <!-- Navigation section -->
+    <nav id="desktop-nav">
+      <div class="logo">Dhanush R</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+      <div class="logo">Dhanush R</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Profile section  -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile.png" alt="profile picture" class="profile-pic"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Dhanush R</h1><br>
+      
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Dhanush_resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/dhanush-r-b2a5265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android-app'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/dhanus013/'"
+          />
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- About section -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1><br>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3><br>
+              <p>Fresher</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3><br>
+              <p>B.Tech  Artificial Intelligence and Data Science </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>To leverage my skills in front-end development,data analysis ,digitial marketing and cloud computing 
+              to build scable and user-centric applications. I aim to contribute to innovative projects that merge AI
+              and modern web technologies,while continuously upskilling to become a full-stack developer and 
+              cloud solutions architect. 
+
+            </p>
+          </div>
+        </div>
+      </div>
+     <!-- Arrow bar -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+
+
+    <!-- Skill section -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+ 
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mongo DB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Others</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>E-mail Marketing</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cloud Computing</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3> SEO optimization</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+ 
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Arrow bar -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+
+
+
+    <!-- Project section  -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1><br>
+      <div class="experience-details-container">
+        <div class="project-containers">
+          <!-- project details starts...-->
+           
+          <!-- project details 1 -->
+          <div class="project-details-container">
+            <div class="article-container">
+              <img
+                src="./assets/e-commerce.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-title">E-Commerce Webpage</h2>
+            <p class="text-container" >TECH STACK : MERN Stack</p><br>
+            <div class="btn-container">
+              <button
+                class="project-btn"
+                onclick="location.href='https://github.com/dhanus013/'"
+              >
+                Github
+              </button>
+
+            </div>
+          </div>
+          <!-- project done.... -->
+           
+          <!-- project details 2  -->
+          <div class="project-details-container">
+            <div class="article-container">
+              <img
+                src="./assets/house.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-title">House Price Prediction</h2>
+            <p class="text-container">TECH STACK :Python,Machine Learing(LSTM)</p><br>
+            <div class="btn-container">
+              <button
+                class="project-btn"
+                onclick="location.href='https://github.com/dhanus013/'"
+              >
+                Github
+              </button>
+
+            </div>
+          </div>
+          <!-- project done.... -->
+           
+          <!-- project details 3 -->
+          <div class="project-details-container">
+            <div class="article-container">
+              <img
+                src="./assets/article.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-title">Article Summarizer</h2>
+            <p class="text-container">TECH STACK :Python,BERT Model</p><br>
+            <div class="btn-container">
+              <button
+                class="project-btn"
+                onclick="location.href='https://github.com/dhanus013/'"
+              >
+                Github
+              </button>
+
+            </div>
+          </div>
+          <!-- project done.... -->
+           
+          <!-- project details 4 -->
+          <div class="project-details-container">
+            <div class="article-container">
+              <img
+                src="./assets/student.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-title">Student Results Generation</h2>
+            <p class="text-container">TECH STACK :UiPath(RSA Tool)</p><br>
+            <div class="btn-container">
+              <button
+                class="project-btn"
+                onclick="location.href='https://github.com/dhanus013/'"
+              >
+                Github
+              </button>
+
+            </div>
+          </div>
+          <!-- project done.... -->
+        
+          <!-- project details 5 -->
+          <div class="project-details-container">
+            <div class="article-container">
+              <img
+                src="./assets/birthday.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-title">Birthday Bot</h2>
+            <p class="text-container">TECH STACK :UiPath(RSA Tool)</p><br>
+            <div class="btn-container">
+              <button
+                class="project-btn"
+                onclick="location.href='https://github.com/dhanus013/'"
+              >
+                Github
+              </button>
+
+            </div>
+          </div>
+          <!-- project done.... -->
+           
+          <!-- project details 6 -->
+          <div class="project-details-container">
+            <div class="article-container">
+              <img
+                src="./assets/waste.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-title">Waste Classification</h2>
+            <p class="text-container">TECH STACK :Python,YOLOv8,CV</p><br>
+            <div class="btn-container">
+              <button
+                class="project-btn"
+                onclick="location.href='https://github.com/dhanus013/'"
+              >
+                Github
+              </button>
+
+            </div>
+          </div>
+          <!-- project done.... -->
+
+        </div>
+      </div>
+      <br><br>
+      <!-- Arrow bar -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+
+
+
+    <!-- Contact section -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">dhanushccet@gmail.com</a></p>
+        </div>
+        <div></div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/dhanush-r-b2a5265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android-app">
+            LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
