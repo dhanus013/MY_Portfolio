@@ -447,9 +447,10 @@ article .icon {
 /* CONTACT */
 
 #contact {
+
   display: flex;
   justify-content: center;
-  flex-direction: center;
+  flex-direction: coloum;
   height: 70vh;
 }
 
