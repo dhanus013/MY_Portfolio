@@ -449,6 +449,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-item:center;
   height: 70vh;
 }
 
