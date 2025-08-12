@@ -422,7 +422,6 @@ article .icon {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  border:black;
   transition: transform 0.3s ease , box-shadow 0.3s ease;
 }
 
@@ -447,10 +446,9 @@ article .icon {
 /* CONTACT */
 
 #contact {
-
   display: flex;
   justify-content: center;
-  flex-direction: coloum;
+  flex-direction: column;
   height: 70vh;
 }
 
