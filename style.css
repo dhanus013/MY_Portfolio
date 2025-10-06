@@ -325,6 +325,74 @@ section {
   width: 400px;
   margin: auto 0 ;
 }
+/* MOtto*/
+.motto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.motto-content h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.motto-content p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.motto-content .tamil {
+  font-family: 'Latha', 'Noto Sans Tamil', serif;
+  font-size: 1.2rem;
+  color: #4b0082;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.6;
+  display: inline-block;
+}
+.motto-content .tamil br {
+  content: "";
+  display: block;
+  margin-left: 0;
+}
+.motto-content .tamil span {
+  display: block;
+  text-align: right; /* moves the span content to right side */
+  font-weight: 500;
+  margin-top: 5px;
+  color: #4b0082;
+
+}
+
+
+
+.motto-content .english {
+  font-style: italic;
+  color: #1e5aa8;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .motto-content h2 {
+    font-size: 1.4rem;
+  }
+  .motto-content p {
+    font-size: 1rem;
+  }
+}
+
+
 
 /* EXPERIENCE SECTION */
 
@@ -374,7 +442,7 @@ article .icon {
 
 .color-container {
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  background: rgb(128, 125, 125);
 }
 
 .project-img {
@@ -405,15 +473,16 @@ article .icon {
 .tech-stack{
   font-size: 0.95rem;
   color: #444;
-  text-align: center;
+  text-align: justify;
   margin-bottom: 20px;
+  
   
 
 
 
 }
 .project-details-container{
-  background-color: rgb(255, 250, 250);
+  background-color: rgb(244, 239, 239);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 10px 20px ;
@@ -449,7 +518,6 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 20%;
   height: 70vh;
 }
 
