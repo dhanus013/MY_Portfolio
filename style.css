@@ -1,11 +1,9 @@
 /* GENERAL */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -21,14 +19,12 @@ p {
 }
 
 /* TRANSITION */
-
 a,
 .btn {
   transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
-
 nav,
 .nav-links {
   display: flex;
@@ -49,6 +45,7 @@ nav {
 a {
   color: black;
   text-decoration: none;
+  text-decoration-color: white;
 }
 
 a:hover {
@@ -60,7 +57,6 @@ a:hover {
 
 .logo {
   font-size: 2rem;
-  font-weight: 600;
 }
 
 .logo:hover {
@@ -68,21 +64,21 @@ a:hover {
 }
 
 /* HAMBURGER MENU */
-
 #hamburger-nav {
   display: none;
 }
 
 .hamburger-menu {
   position: relative;
+  display: inline-block;
 }
 
 .hamburger-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
   height: 24px;
+  width: 30px;
   cursor: pointer;
 }
 
@@ -90,7 +86,7 @@ a:hover {
   width: 100%;
   height: 2px;
   background-color: black;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links {
@@ -98,50 +94,47 @@ a:hover {
   top: 100%;
   right: 0;
   background-color: white;
-  overflow: hidden;
+  width: fit-content;
   max-height: 0;
-  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
 }
 
 .menu-links.open {
   max-height: 300px;
 }
 
-.menu-links a {
-  display: block;
-  padding: 10px;
-  font-size: 1.5rem;
-}
-
-/* ICON TRANSFORM */
-
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
-
 /* SECTIONS */
-
 section {
   padding-top: 4vh;
   margin: 0 10rem;
+  box-sizing: border-box;
   min-height: fit-content;
 }
 
-.section-container {
-  display: flex;
-  gap: 4rem;
+/* Center All Section Titles */
+section h1,
+.title {
+  text-align: center !important;
+  width: 100%;
+  margin: 0 auto 20px auto !important;
 }
 
-/* PROFILE */
-
+/* PROFILE SECTION */
 #profile {
   display: flex;
   justify-content: center;
@@ -150,26 +143,29 @@ section {
 }
 
 .section__pic-container {
-  height: 400px;
-  width: 400px;
+  display: flex;
+  height: 330px; /* reduced size */
+  width: 330px;
   margin: auto 0;
 }
 
-.profile-pic {
+.section__pic-container img {
   width: 100%;
-  height: 100%;
   border-radius: 2rem;
-  object-fit: cover;
 }
 
 .section__text {
-  text-align: center;
   align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
 }
 
 .section__text__p1 {
+  text-align: center;
   font-size: 2rem;
-  font-weight: 600;
 }
 
 .section__text__p2 {
@@ -179,25 +175,23 @@ section {
 
 .title {
   font-size: 3rem;
-  font-weight: 700;
+  text-align: center;
 }
-
-/* SOCIAL ICONS */
 
 #socials-container {
   display: flex;
   justify-content: center;
-  gap: 1rem;
   margin-top: 1rem;
+  gap: 1rem;
 }
 
+/* ICON */
 .icon {
-  height: 2rem;
   cursor: pointer;
+  height: 2rem;
 }
 
 /* BUTTONS */
-
 .btn-container {
   display: flex;
   justify-content: center;
@@ -205,107 +199,102 @@ section {
 }
 
 .btn {
+  font-weight: 700;
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
-  font-weight: 700;
-  border: 1px solid rgb(53, 53, 53);
 }
 
-.btn-color-1 {
-  background: rgb(53, 53, 53);
-  color: white;
-}
-
-.btn-color-1:hover {
-  background: black;
-}
-
+.btn-color-1,
 .btn-color-2 {
-  background: transparent;
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
 
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
 
-/* ABOUT */
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
 
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+/* ABOUT SECTION */
 #about {
   position: relative;
 }
 
 .about-containers {
-  display: flex;
   gap: 2rem;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
-.details-container {
-  flex: 1;
-  background: white;
-  padding: 1.5rem;
-  border-radius: 2rem;
-  text-align: center;
-  border: 1px solid rgb(163, 163, 163);
-}
-
-.text-container {
-  font-size: 1.2rem;
-  text-align: justify;
-}
-
-/* Motto Section */
-
-.motto {
-  display: flex;
+.about-details-container {
   justify-content: center;
-  padding: 40px 20px;
-  border-radius: 20px;
-  max-width: 800px;
-  margin: 20px auto;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
 }
 
-.motto-content h2 {
-  font-size: 1.8rem;
-  color: #2c3e50;
-  font-weight: 700;
+.about-containers,
+.about-details-container {
+  display: flex;
 }
 
-.motto-content p {
-  line-height: 1.6;
+.about-pic {
+  max-width: 330px;
+  width: 80%;
+  border-radius: 2rem;
+  margin: auto;
 }
 
-.motto-content .tamil {
-  font-family: "Noto Sans Tamil", serif;
-  font-size: 1.2rem;
-  color: #4b0082;
-  font-weight: 600;
-}
-
-/* SKILLS */
-
+/* EXPERIENCE SECTION */
 #experience {
   position: relative;
 }
 
-.experience-sub-title {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: rgb(85, 85, 85);
-  margin-bottom: 2rem;
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .article-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2.5rem;
+  justify-content: space-around;
 }
 
-/* PROJECTS */
+/* Skills Section Fix */
+.skills-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
 
+.skills-container img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+/* PROJECTS SECTION */
 #projects {
   position: relative;
 }
@@ -313,261 +302,102 @@ section {
 .project-containers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 35px;
   margin-top: 30px;
 }
 
 .project-details-container {
-  padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
   text-align: center;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .project-details-container:hover {
   transform: translateY(-10px);
 }
 
-.project-img {
-  width: 90%;
-  max-width: 200px;
-  border-radius: 1rem;
-  margin-bottom: 15px;
+/* CERTIFICATES SECTION */
+#certificates {
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
-.project-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-/* CERTIFICATES */
-
-.cert-container {
+.cert-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
 
 .cert-card {
+  background: white;
   padding: 20px;
-  border-radius: 1rem;
-  background: rgb(245, 245, 245);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 15px;
   text-align: center;
-  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
 }
 
 .cert-card:hover {
-  transform: scale(1.03);
+  transform: translateY(-10px);
+}
+
+.cert-card img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+}
+
+.cert-title {
+  margin-top: 10px;
+  font-weight: 600;
 }
 
 /* CONTACT */
-
 #contact {
-  height: 70vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
+  height: 70vh;
 }
 
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
-  padding: 1rem;
   border-radius: 2rem;
-  border: 1px solid rgb(163, 163, 163);
+  border: rgb(163, 163, 163) 0.1rem solid;
+  margin: 2rem auto;
+  padding: 0.5rem;
 }
 
 /* FOOTER */
-
-footer {
-  height: 20vh;
-  margin: 0 1rem;
-}
-
 footer p {
   text-align: center;
 }
 
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 1200px) {
-  section {
-    margin: 0 4rem;
-  }
-
-  .project-containers {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .cert-container {
+/* RESPONSIVENESS */
+@media (max-width: 900px) {
+  .project-containers,
+  .cert-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 800px) {
-
-  #desktop-nav {
-    display: none;
-  }
-
-  #hamburger-nav {
-    display: flex;
-  }
-
-  #profile {
-    flex-direction: column;
-    height: auto;
-    text-align: center;
-  }
-
-  .section__pic-container {
-    width: 250px;
-    height: 250px;
+@media (max-width: 600px) {
+  section {
+    margin: 0 1rem;
   }
 
   .project-containers,
-  .cert-container {
+  .cert-grid {
     grid-template-columns: 1fr;
   }
 
-  section {
-    margin: 0 2rem;
-  }
-  }
-/* ----------------- QUICK OVERRIDES / FIXES ----------------- */
-/* Place this at the very end of style.css to override earlier rules */
-
-/* 1) Disable fixed section heights that cause big gaps */
-section {
-  height: auto !important;
-  min-height: fit-content !important;
-  padding-top: 4vh !important;
-  margin: 0 10rem !important;
-}
-
-/* If your file uses very specific selectors, this forces auto height on large screens */
-@media (min-width: 1201px) {
-  section {
-    height: auto !important;
-  }
-}
-
-/* 2) Center the About image container on desktop (and keep centered on mobile) */
-.section__pic-container,
-.section__pic-container > img,
-.section__pic-container img,
-.about-pic {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  margin: 0 auto !important;
-  width: 100% !important;
-  max-width: 400px !important; /* keeps it from stretching on large screens */
-  height: auto !important;
-}
-
-/* ensure the image fits inside container */
-.section__pic-container img,
-.about-pic {
-  object-fit: cover !important;
-  border-radius: 2rem !important;
-}
-
-/* 3) Certificates grid: support both class names used earlier */
-.cert-container,
-.certificate-container {
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
-  gap: 25px !important;
-  align-items: stretch !important;
-  margin-top: 30px !important;
-}
-
-/* card variants */
-.cert-card,
-.certificate-card {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 22px !important;
-  height: 180px !important;
-  text-align: center !important;
-  border-radius: 12px !important;
-  text-decoration: none !important;
-  color: inherit !important;
-  transition: transform 0.28s ease !important;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08) !important;
-  background: #fff !important;
-}
-
-/* hover lift */
-.cert-card:hover,
-.certificate-card:hover {
-  transform: translateY(-10px) !important;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.14) !important;
-}
-
-/* 4) Contact center on desktop */
-.contact-info-upper-container {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  gap: 2rem !important;
-  margin: 2rem auto !important;
-  width: fit-content !important;
-  padding: 1rem !important;
-}
-
-/* 5) Responsive breakpoints for certificates & projects */
-@media (max-width: 1200px) {
-  .cert-container,
-  .certificate-container {
-    grid-template-columns: repeat(2, 1fr) !important;
-    margin: 20px !important;
-  }
-
-  .project-containers {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-
-  section {
-    margin: 0 4rem !important;
-  }
-}
-
-@media (max-width: 800px) {
-  .cert-container,
-  .certificate-container,
-  .project-containers {
-    grid-template-columns: 1fr !important;
-  }
-
-  section {
-    margin: 0 2rem !important;
-  }
-
-  #profile {
-    flex-direction: column !important;
-    gap: 1.5rem !important;
-    height: auto !important;
-  }
-
   .section__pic-container {
-    max-width: 260px !important;
-    width: 46vw !important;
-    height: auto !important;
+    width: 260px;
+    height: 260px;
   }
-}
-
-/* 6) Small polish: prevent extra big gaps from margin/padding on large desktop */
-body, main, .page {
-  margin: 0;
-  padding: 0;
-}
-
-/* 7) Debug helpers (remove/comment out after checking) */
-/* .section__pic-container { outline: 1px dashed rgba(0,0,0,0.06); } */
+              }
