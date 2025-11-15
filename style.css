@@ -241,6 +241,11 @@ section {
   gap: 2rem;
   margin: 2rem 0;
 }
+.about-pic{
+  width: 80%;
+  height: 80%;
+  
+}
 
 .details-container {
   flex: 1;
@@ -283,6 +288,7 @@ section {
   font-size: 1.2rem;
   color: #4b0082;
   font-weight: 600;
+  justify-content:center;
 }
 
 /* SKILLS */
