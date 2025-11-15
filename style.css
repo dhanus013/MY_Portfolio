@@ -170,6 +170,7 @@ section {
 .section__text__p1 {
   font-size: 2rem;
   font-weight: 600;
+  text-align:center;
 }
 
 .section__text__p2 {
@@ -241,7 +242,7 @@ section {
   gap: 2rem;
   margin: 2rem 0;
 }
-.about-pic{
+.about-pic {
   width: 80%;
   height: 80%;
   
