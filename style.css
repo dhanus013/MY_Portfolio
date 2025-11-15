@@ -248,6 +248,8 @@ h1.title {
 .about-pic {
   width: 80%;
   height: 80%;
+  border-radius: 2rem;
+  object-fit: cover;
   
 }
 
@@ -346,10 +348,23 @@ h1.title {
   margin-bottom: 15px;
 }
 
+
 .project-title {
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 10px;
+}
+.project-btn{
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  border: 1px solid rgb(53, 53, 53);
+  
+}
+.project-btn:hover{
+  color:white;
+  background-color:black;
 }
 
 /* CERTIFICATES */
@@ -378,7 +393,7 @@ h1.title {
 #contact {
   height: 70vh;
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   justify-content: center;
 }
 
