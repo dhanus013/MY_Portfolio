@@ -199,6 +199,7 @@ h1.title {
 .icon {
   height: 2rem;
   cursor: pointer;
+  justify-content:flex-start;
 }
 
 /* BUTTONS */
@@ -295,6 +296,7 @@ h1.title {
   font-size: 1.2rem;
   color: #4b0082;
   font-weight: 600;
+  align-items:center;
   justify-content:center;
 }
 
@@ -347,7 +349,7 @@ h1.title {
   max-width: 200px;
   border-radius: 1rem;
   margin-bottom: 15px;
-  justify-content:center;
+  align-items:center;
 }
 
 
