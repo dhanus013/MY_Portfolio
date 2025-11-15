@@ -182,6 +182,9 @@ section {
   font-size: 3rem;
   font-weight: 700;
 }
+h1.title {
+  text-align: center;
+}
 
 /* SOCIAL ICONS */
 
