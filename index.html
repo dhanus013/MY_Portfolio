@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+
   </head>
   <body>
 
@@ -21,6 +22,7 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#publications">Publications</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -39,6 +41,7 @@
           <ul>
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </ul>
@@ -148,7 +151,7 @@
       <span>— திருக்குறள் 619</span>
     </p>
     <p class="english">
-      “Even if destiny does not favor, the reward of sincere effort never fails.”<br>
+      "Even if destiny does not favor, the reward of sincere effort never fails."<br>
       — Thirukkural 619 (Thiruvalluvar)
     </p>
   </div>
@@ -319,9 +322,55 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='#projects'"
+        onclick="location.href='#publications'"
       />
     </section>
+
+    <!-- ===== PUBLICATIONS SECTION ===== -->
+    <section id="publications">
+      <p class="section__text__p1">My Research Work</p>
+      <h1 class="title">Publications</h1>
+
+      <div class="publications-grid">
+
+        <!-- Research Paper -->
+        <div class="pub-card" onclick="window.open('https://ijsrem.com/download/deepfake-video-detection-using-spatial-and-temporal-feature-learning', '_blank')">
+          <span class="pub-badge research">Research Paper</span>
+          <h3>Deepfake Video Detection Using Spatial and Temporal Feature Learning</h3>
+          <p class="pub-meta">Authors: <span>Chandru J, Dhanush R, Leegan S, Dhileep Raj P, Mrs. P. Sathya</span></p>
+          <p class="pub-meta">Publisher: <span>IJSREM — International Journal of Scientific Research in Engineering and Management</span></p>
+          <p class="pub-meta">Domain: <span>Deep Learning · Video Forensics · EfficientNet-B0 · BiLSTM</span></p>
+          <a class="pub-link" href="https://ijsrem.com/download/deepfake-video-detection-using-spatial-and-temporal-feature-learning" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Paper
+          </a>
+        </div>
+
+        <!-- Survey Paper -->
+        <div class="pub-card" onclick="window.open('https://rjwave.org/ijedr/papers/IJEDR2601596.pdf', '_blank')">
+          <span class="pub-badge survey">Survey Paper</span>
+          <h3>A Survey on Deepfake Detection Using Spatial and Temporal Feature-Based Deep Learning Techniques</h3>
+          <p class="pub-meta">Authors: <span>Dhanush R, Dhileepraj P, Chandru J, Leegan S, Sathya P</span></p>
+          <p class="pub-meta">Publisher: <span>IJEDR — International Journal of Engineering Development and Research, Vol. 14, Issue 1, 2026</span></p>
+          <p class="pub-meta">Domain: <span>CNN · LSTM · Spatio-Temporal Learning · Video Forensics</span></p>
+          <a class="pub-link" href="https://rjwave.org/ijedr/papers/IJEDR2601596.pdf" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Paper
+          </a>
+        </div>
+
+      </div>
+
+      <br><br>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#certificates'"
+      />
+    </section>
+
+
     <!-- ✅ CERTIFICATES SECTION ADDED HERE -->
     <section id="certificates">
       <p class="section__text__p1">My Achievements</p>
@@ -363,7 +412,7 @@
       </div>
 
       <br><br>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'"/>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'"/>
     </section>
 
 
@@ -560,6 +609,7 @@
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#publications">Publications</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
